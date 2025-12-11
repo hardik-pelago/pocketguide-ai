@@ -4,6 +4,7 @@ import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { parseProductData } from '@/utils/productParser';
 import { generateSystemPrompt } from '@/utils/systemPrompt';
+import { useLocalSearchParams, useRouter } from 'expo-router'; // Added for params and router
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
     ActivityIndicator,
@@ -15,9 +16,8 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import { LLAMA3_2_1B, LLAMA3_2_1B_SPINQUANT, Message, useLLM } from 'react-native-executorch';
+import { LLAMA3_2_1B, Message, useLLM } from 'react-native-executorch';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import mockData from './mockData3.json'; // Moved to app/ root; adjust if needed
 
 interface ChatMessage {
   id: string;
@@ -26,6 +26,10 @@ interface ChatMessage {
 }
 
 export default function ChatScreen() {
+  const { mockData: mockDataStr } = useLocalSearchParams(); // Get passed data
+  const router = useRouter(); // For potential fallback navigation
+  const mockData = mockDataStr ? JSON.parse(mockDataStr as string) : {}; // Parse; fallback to empty if missing
+
   const colorScheme = useColorScheme();
   const [inputText, setInputText] = useState('');
   const [systemPrompt, setSystemPrompt] = useState<string>('');
@@ -37,6 +41,13 @@ export default function ChatScreen() {
   const colors = Colors[colorScheme ?? 'light'];
 
   useEffect(() => {
+    if (!mockData || Object.keys(mockData).length === 0) {
+      console.error('No mockData received; cannot load product info. Redirecting back.');
+      router.back(); // Or handle error UI
+      setIsLoadingProduct(false);
+      return;
+    }
+
     try {
       const parsedData = parseProductData(mockData);
       if (parsedData) {
@@ -53,7 +64,7 @@ export default function ChatScreen() {
       console.error('Error loading product data:', error);
       setIsLoadingProduct(false);
     }
-  }, []);
+  }, [mockData]); // Depend on mockData
 
   const [messages, setMessages] = useState<ChatMessage[]>([]);
 
@@ -221,7 +232,7 @@ export default function ChatScreen() {
   }
 
   return (
-    <SafeAreaView style={styles.safeArea} edges={['top']}>
+    <SafeAreaView style={styles.safeArea} edges={['top','bottom']}>
       <ThemedView style={styles.container}>
         <KeyboardAvoidingView
           style={styles.keyboardView}

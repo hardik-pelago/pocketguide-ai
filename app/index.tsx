@@ -31,8 +31,15 @@ export default function ProductScreen() {
 
   const insets=useSafeAreaInsets();
 
+  const handleAskPocketGuide = () => {
+    router.push({
+      pathname: '/chat',
+      params: { mockData: JSON.stringify(mockData) },
+    });
+  };
+
   return (
-    <SafeAreaView style={styles.safeArea} edges={[]}>
+    <SafeAreaView style={styles.safeArea} edges={['bottom']}>
       <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <View style={styles.hero}>
           <Image source={heroImage} style={styles.heroImage} contentFit="cover" />
@@ -86,7 +93,7 @@ export default function ProductScreen() {
 
         <TouchableOpacity
           style={styles.askButton}
-          onPress={() => router.push('/chat')}
+          onPress={handleAskPocketGuide}
           activeOpacity={0.8}>
           <Ionicons name="chatbubbles" size={18} color="#fff" />
           <Text style={styles.askButtonText}>Ask PocketGuide about this experience</Text>
@@ -148,7 +155,7 @@ function IconButton({ icon }: { icon: any }) {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: 'white',
   },
   container: {
     flex: 1,
@@ -382,4 +389,3 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-
