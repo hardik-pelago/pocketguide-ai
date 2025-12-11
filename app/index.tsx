@@ -1,355 +1,385 @@
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-import { parseProductData } from '@/utils/productParser';
-import { generateSystemPrompt } from '@/utils/systemPrompt';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { Image } from 'expo-image';
+import { Link, useRouter } from 'expo-router';
+import React from 'react';
 import {
-  ActivityIndicator,
-  FlatList,
-  KeyboardAvoidingView,
-  Platform,
+  ScrollView,
   StyleSheet,
-  TextInput,
+  Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-import { LLAMA3_2_1B_SPINQUANT, Message, useLLM } from 'react-native-executorch';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import mockData from './(tabs)/mockData3.json';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
-interface ChatMessage {
-  id: string;
-  role: 'user' | 'assistant';
-  content: string;
-}
+import mockData from './mockData4.json';
 
-export default function ChatScreen() {
-  const colorScheme = useColorScheme();
-  const [inputText, setInputText] = useState('');
-  const [systemPrompt, setSystemPrompt] = useState<string>('');
-  const [productName, setProductName] = useState<string>('');
-  const [isLoadingProduct, setIsLoadingProduct] = useState(true);
-  const flatListRef = useRef<FlatList>(null);
-  const llm = useLLM({ model: LLAMA3_2_1B_SPINQUANT });
+export default function ProductScreen() {
+  const router = useRouter();
+  const product = mockData.product;
+  const option = mockData.productOptionsData?.productOptionsData?.[0];
 
-  const colors = Colors[colorScheme ?? 'light'];
+  const availableDates: string[] = product.availableDates || [];
+  const nextDates = availableDates.slice(0, 3);
 
-  useEffect(() => {
-    try {
-      const parsedData = parseProductData(mockData);
-      if (parsedData) {
-        const prompt = generateSystemPrompt(parsedData);
-        console.log('System prompt length:', prompt.length, 'chars');
-        setSystemPrompt(prompt);
-        setProductName(parsedData.productName);
-        setIsLoadingProduct(false);
-      } else {
-        console.error('Failed to parse product data');
-        setIsLoadingProduct(false);
-      }
-    } catch (error) {
-      console.error('Error loading product data:', error);
-      setIsLoadingProduct(false);
-    }
-  }, []);
+  const heroImage =
+    product.mediaData?.[0]?.sizes?.large ||
+    product.mediaData?.[0]?.url ||
+    'https://images.unsplash.com/photo-1505764706515-aa95265c5abc?auto=format&fit=crop&w=1200&q=80';
 
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const priceFrom = option?.nextAvailabilityData?.priceRangeFrom ?? product.priceRangeFrom ?? 0;
+  const currency = option?.currency || product.currency || 'USD';
 
-  useEffect(() => {
-    if (!isLoadingProduct && productName) {
-      setMessages([
-        {
-          id: '1',
-          role: 'assistant',
-          content: `Hello! I'm your Product Assistant for "${productName}". I'm here to help answer any questions you have about this product. What would you like to know?`,
-        },
-      ]);
-    }
-  }, [isLoadingProduct, productName]);
-
-  useEffect(() => {
-    if (messages.length > 0) {
-      setTimeout(() => {
-        flatListRef.current?.scrollToEnd({ animated: true });
-      }, 100);
-    }
-  }, [messages.length, llm.response]);
-
-  useEffect(() => {
-    if (llm.response && llm.response.trim() && !llm.isGenerating) {
-      setMessages((prev) => {
-        const lastMessage = prev[prev.length - 1];
-        if (lastMessage?.role === 'assistant' && lastMessage.id.startsWith('temp-')) {
-          return [
-            ...prev.slice(0, -1),
-            {
-              ...lastMessage,
-              id: `msg-${Date.now()}`,
-              content: llm.response.trim(),
-            },
-          ];
-        }
-        return prev;
-      });
-    } else if (llm.response && llm.isGenerating) {
-      setMessages((prev) => {
-        const lastMessage = prev[prev.length - 1];
-        if (lastMessage?.role === 'assistant' && lastMessage.id.startsWith('temp-')) {
-          return [
-            ...prev.slice(0, -1),
-            {
-              ...lastMessage,
-              content: llm.response,
-            },
-          ];
-        } else if (lastMessage?.role !== 'assistant' || !lastMessage.id.startsWith('temp-')) {
-          return [
-            ...prev,
-            {
-              id: `temp-${Date.now()}`,
-              role: 'assistant' as const,
-              content: llm.response,
-            },
-          ];
-        }
-        return prev;
-      });
-    }
-  }, [llm.response, llm.isGenerating]);
-
-  const handleSend = useCallback(async () => {
-    if (!inputText.trim() || llm.isGenerating || !systemPrompt) return;
-
-    const userMessage: ChatMessage = {
-      id: `msg-${Date.now()}`,
-      role: 'user',
-      content: inputText.trim(),
-    };
-
-    setInputText('');
-
-    setMessages((prev) => {
-      const updatedMessages = [...prev, userMessage];
-
-      const recentMessages = updatedMessages
-        .filter((msg) => !msg.id.startsWith('temp-'))
-        .slice(-10)
-        .map((msg) => ({
-          role: msg.role,
-          content: msg.content.length > 300 ? msg.content.substring(0, 300) + '...' : msg.content,
-        }));
-
-      const chatHistory: Message[] = [{ role: 'system', content: systemPrompt }, ...recentMessages];
-
-      const messagesWithTemp = [
-        ...updatedMessages,
-        {
-          id: `temp-${Date.now()}`,
-          role: 'assistant' as const,
-          content: '',
-        },
-      ];
-
-      llm.generate(chatHistory).catch((error: any) => {
-        console.error('Error generating response:', error);
-        const errorCode = error?.code || error?.message || 'unknown';
-        setMessages((prevMsgs) => {
-          const lastMsg = prevMsgs[prevMsgs.length - 1];
-          if (lastMsg?.id.startsWith('temp-')) {
-            let errorMessage = 'Sorry, I encountered an error. Please try again.';
-            if (errorCode === 18 || error?.message?.includes('18')) {
-              errorMessage = 'The request was too long. Please try a shorter question or start a new conversation.';
-            }
-            return [
-              ...prevMsgs.slice(0, -1),
-              {
-                ...lastMsg,
-                id: `msg-${Date.now()}`,
-                content: errorMessage,
-              },
-            ];
-          }
-          return prevMsgs;
-        });
-      });
-
-      return messagesWithTemp;
-    });
-  }, [inputText, llm, systemPrompt]);
-
-  const renderMessage = useCallback(
-    ({ item }: { item: ChatMessage }) => {
-      const isUser = item.role === 'user';
-      return (
-        <View
-          style={[
-            styles.messageContainer,
-            isUser ? styles.userMessageContainer : styles.assistantMessageContainer,
-          ]}>
-          <ThemedView
-            style={[
-              styles.messageBubble,
-              isUser
-                ? { backgroundColor: colors.tint }
-                : { backgroundColor: colorScheme === 'dark' ? '#2a2a2a' : '#f0f0f0' },
-            ]}>
-            <ThemedText
-              style={[
-                styles.messageText,
-                isUser && { color: '#fff' },
-              ]}>
-              {item.content || '...'}
-            </ThemedText>
-          </ThemedView>
-        </View>
-      );
-    },
-    [colors.tint, colorScheme]
-  );
-
-  if (isLoadingProduct) {
-    return (
-      <SafeAreaView style={styles.safeArea} edges={['top']}>
-        <ThemedView style={[styles.container, styles.loadingContainer]}>
-          <ActivityIndicator size="large" color={colors.tint} />
-          <ThemedText style={styles.loadingText}>Loading product information...</ThemedText>
-        </ThemedView>
-      </SafeAreaView>
-    );
-  }
+  const insets=useSafeAreaInsets();
 
   return (
-    <SafeAreaView style={styles.safeArea} edges={['top']}>
-      <ThemedView style={styles.container}>
-        <KeyboardAvoidingView
-          style={styles.keyboardView}
-          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-          keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}>
-          <FlatList
-            ref={flatListRef}
-            data={messages}
-            renderItem={renderMessage}
-            keyExtractor={(item) => item.id}
-            contentContainerStyle={styles.messagesList}
-            onContentSizeChange={() => flatListRef.current?.scrollToEnd({ animated: true })}
-          />
-          <View
-            style={[
-              styles.inputContainer,
-              { borderTopColor: colorScheme === 'dark' ? '#2a2a2a' : '#e0e0e0' },
-            ]}>
-            <TextInput
-              style={[
-                styles.input,
-                {
-                  backgroundColor: colorScheme === 'dark' ? '#2a2a2a' : '#f5f5f5',
-                  color: colors.text,
-                },
-              ]}
-              value={inputText}
-              onChangeText={setInputText}
-              placeholder="Ask about this product..."
-              placeholderTextColor={colors.icon}
-              multiline
-              maxLength={500}
-              editable={!llm.isGenerating && !isLoadingProduct}
-              onSubmitEditing={handleSend}
-              returnKeyType="send"
-            />
-            <TouchableOpacity
-              style={[
-                styles.sendButton,
-                {
-                  backgroundColor: inputText.trim() && !llm.isGenerating && !isLoadingProduct ? colors.tint : colors.icon,
-                },
-              ]}
-              onPress={handleSend}
-              disabled={!inputText.trim() || llm.isGenerating || isLoadingProduct || !systemPrompt}>
-              {llm.isGenerating ? (
-                <ActivityIndicator size="small" color="#fff" />
-              ) : (
-                <ThemedText style={styles.sendButtonText}>Send</ThemedText>
-              )}
-            </TouchableOpacity>
+    <SafeAreaView style={styles.safeArea} edges={[]}>
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+        <View style={styles.hero}>
+          <Image source={heroImage} style={styles.heroImage} contentFit="cover" />
+          <View style={[styles.topIcons,{top:insets.top}]}>
+            <IconButton icon="chevron-back" />
+            <View style={styles.topRightIcons}>
+              <IconButton icon="heart-outline" />
+              <IconButton icon="cart-outline" />
+              <IconButton icon="share-outline" />
+            </View>
           </View>
-        </KeyboardAvoidingView>
-      </ThemedView>
+          <TouchableOpacity style={styles.playButton}>
+            <Ionicons name="play" size={18} color="#000" />
+          </TouchableOpacity>
+          <View style={styles.imageCount}>
+            <Text style={styles.imageCountText}>1/10</Text>
+          </View>
+        </View>
+
+        <View style={styles.banner}>
+          <Text style={styles.bannerText}>👋 Sign up for an extra 10% off!</Text>
+          <Link href="#" style={styles.bannerLink}>
+            <Text style={styles.bannerLinkText}>T&Cs</Text>
+          </Link>
+        </View>
+
+        <View style={styles.pillsRow}>
+          <Pill label="Instant confirmation" />
+          <Pill label="Flexible date" />
+          <Pill label="No cancellation" />
+        </View>
+
+        <View style={styles.titleBlock}>
+          <Text style={styles.title}>{product.productName}</Text>
+          <View style={styles.row}>
+            <Ionicons name="star" size={16} color="#f7b500" />
+            <Text style={styles.ratingText}>
+              {product.rating?.toFixed(1)} · {product.reviewCount} reviews · {product.destination?.destinationName}
+            </Text>
+          </View>
+        </View>
+
+        <View style={styles.badge}>
+          <Ionicons name="trophy" size={18} color="#d89614" />
+          <View style={{ flex: 1 }}>
+            <Text style={styles.badgeTitle}>Top 10</Text>
+            <Text style={styles.badgeSubtitle}>Singapore · Most booked</Text>
+          </View>
+          <Ionicons name="chevron-forward" size={16} color="#666" />
+        </View>
+
+        <TouchableOpacity
+          style={styles.askButton}
+          onPress={() => router.push('/aiChat')}
+          activeOpacity={0.8}>
+          <Ionicons name="chatbubbles" size={18} color="#fff" />
+          <Text style={styles.askButtonText}>Ask PocketGuide about this experience</Text>
+        </TouchableOpacity>
+
+        <View style={styles.sectionCard}>
+          <Text style={styles.sectionTitle}>Next available dates</Text>
+          <View style={styles.dateRow}>
+            {nextDates.map((date) => {
+              const parsed = new Date(date);
+              const day = parsed.toLocaleDateString('en-US', { weekday: 'short' });
+              const monthDay = parsed.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+              return (
+                <View key={date} style={styles.dateCard}>
+                  <Text style={styles.dateDay}>{day}</Text>
+                  <Text style={styles.dateMonth}>{monthDay}</Text>
+                </View>
+              );
+            })}
+          </View>
+          {availableDates.length > 3 && (
+            <Text style={styles.dateFooter}>+ {availableDates.length - 3} more dates available</Text>
+          )}
+        </View>
+
+        <View style={styles.footer}>
+          <View>
+            <Text style={styles.fromLabel}>From</Text>
+            <Text style={styles.price}>
+              {currency} {priceFrom?.toFixed(2)}
+            </Text>
+          </View>
+          <TouchableOpacity style={styles.ctaButton} activeOpacity={0.9}>
+            <Text style={styles.ctaText}>Select option</Text>
+            <Ionicons name="sparkles-outline" size={16} color="#fff" />
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
     </SafeAreaView>
+  );
+}
+
+function Pill({ label }: { label: string }) {
+  return (
+    <View style={styles.pill}>
+      <Text style={styles.pillText}>{label}</Text>
+    </View>
+  );
+}
+
+function IconButton({ icon }: { icon: any }) {
+  return (
+    <TouchableOpacity style={styles.iconButton} activeOpacity={0.8}>
+      <Ionicons name={icon} size={20} color="#000" />
+    </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor: '#fff',
     flex: 1,
+    backgroundColor: '#f9f9f9',
   },
   container: {
     flex: 1,
   },
-  loadingContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 16,
+  hero: {
+    position: 'relative',
   },
-  loadingText: {
-    fontSize: 16,
-    color: '#666',
+  heroImage: {
+    width: '100%',
+    height: 340,
+    borderBottomLeftRadius: 16,
+    borderBottomRightRadius: 16,
   },
-  keyboardView: {
-    flex: 1,
-  },
-  messagesList: {
-    padding: 16,
-    paddingBottom: 8,
-  },
-  messageContainer: {
-    marginBottom: 12,
-  },
-  userMessageContainer: {
-    alignItems: 'flex-end',
-  },
-  assistantMessageContainer: {
-    alignItems: 'flex-start',
-  },
-  messageBubble: {
-    maxWidth: '80%',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderRadius: 18,
-  },
-  messageText: {
-    fontSize: 16,
-    lineHeight: 22,
-  },
-  inputContainer: {
+  topIcons: {
+    position: 'absolute',
+    top: 12,
+    left: 12,
+    right: 12,
     flexDirection: 'row',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderTopWidth: 1,
-    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  topRightIcons: {
+    flexDirection: 'row',
     gap: 8,
   },
-  input: {
-    flex: 1,
-    minHeight: 44,
-    maxHeight: 100,
-    borderRadius: 22,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    fontSize: 16,
-  },
-  sendButton: {
-    width: 60,
-    height: 44,
-    borderRadius: 22,
-    justifyContent: 'center',
+  iconButton: {
+    width: 38,
+    height: 38,
+    borderRadius: 12,
+    backgroundColor: '#fff',
     alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.08,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
   },
-  sendButtonText: {
+  playButton: {
+    position: 'absolute',
+    top: '45%',
+    left: '45%',
+    width: 54,
+    height: 54,
+    borderRadius: 27,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 8,
+  },
+  imageCount: {
+    position: 'absolute',
+    bottom: 8,
+    right: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 12,
+    backgroundColor: 'rgba(0,0,0,0.55)',
+  },
+  imageCountText: {
     color: '#fff',
     fontWeight: '600',
-    fontSize: 16,
+    fontSize: 12,
+  },
+  banner: {
+    marginTop: 12,
+    marginHorizontal: 16,
+    padding: 12,
+    borderRadius: 12,
+    backgroundColor: '#eaf3ff',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  bannerText: {
+    color: '#0a6cff',
+    fontWeight: '600',
+  },
+  bannerLink: {
+    paddingHorizontal: 6,
+  },
+  bannerLinkText: {
+    color: '#0a6cff',
+    fontWeight: '600',
+    textDecorationLine: 'underline',
+  },
+  pillsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+    marginTop: 12,
+    marginHorizontal: 16,
+  },
+  pill: {
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 12,
+    backgroundColor: '#f1f1f1',
+  },
+  pillText: {
+    fontSize: 12,
+    color: '#333',
+  },
+  titleBlock: {
+    marginHorizontal: 16,
+    marginTop: 14,
+    gap: 6,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#111',
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  ratingText: {
+    color: '#555',
+  },
+  badge: {
+    marginTop: 14,
+    marginHorizontal: 16,
+    padding: 12,
+    borderRadius: 12,
+    backgroundColor: '#fff5e6',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  badgeTitle: {
+    fontWeight: '700',
+    color: '#8c6d1f',
+  },
+  badgeSubtitle: {
+    color: '#8c6d1f',
+    fontSize: 12,
+  },
+  askButton: {
+    marginTop: 16,
+    marginHorizontal: 16,
+    paddingVertical: 14,
+    borderRadius: 12,
+    backgroundColor: '#5a31f4',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+  },
+  askButtonText: {
+    color: '#fff',
+    fontWeight: '700',
+    fontSize: 14,
+  },
+  sectionCard: {
+    marginTop: 18,
+    marginHorizontal: 16,
+    padding: 14,
+    borderRadius: 12,
+    backgroundColor: '#f2fbf5',
+    gap: 10,
+  },
+  sectionTitle: {
+    fontWeight: '700',
+    color: '#2b7744',
+  },
+  dateRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  dateCard: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 12,
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#e5e5e5',
+    alignItems: 'center',
+  },
+  dateDay: {
+    fontSize: 12,
+    color: '#555',
+  },
+  dateMonth: {
+    fontWeight: '700',
+    color: '#222',
+  },
+  dateFooter: {
+    color: '#2b7744',
+    fontSize: 12,
+    marginTop: 4,
+  },
+  footer: {
+    marginHorizontal: 16,
+    marginVertical: 20,
+    padding: 14,
+    borderRadius: 14,
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+  },
+  fromLabel: {
+    color: '#555',
+    fontSize: 12,
+  },
+  price: {
+    fontWeight: '800',
+    fontSize: 18,
+    color: '#111',
+  },
+  ctaButton: {
+    paddingHorizontal: 18,
+    paddingVertical: 12,
+    borderRadius: 12,
+    backgroundColor: '#1b1f3b',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  ctaText: {
+    color: '#fff',
+    fontWeight: '700',
   },
 });
+

@@ -1,0 +1,1545 @@
+{
+    "product": {
+      "__typename": "Product",
+      "isCheckoutDisabled": false,
+      "productId": "pok40",
+      "productName": "Universal Studios Singapore Tickets",
+      "productUri": "rws-universal-studios-ticket",
+      "destinationId": "singapore",
+      "destination": {
+        "__typename": "Destination",
+        "destinationName": "Singapore",
+        "destinationCode": 23130
+      },
+      "kfEarnMilesPromoText": "Earn 3X KrisFlyer miles for bookings made between 8 Nov and 8 Dec.",
+      "kfmilesBurnValue": 8141,
+      "maximumKfMiles": 50000,
+      "kfmilesMinimumValue": 1000,
+      "location": {
+        "neighborhood": "Sentosa",
+        "placeId": "ChIJQ6MVplUZ2jERn1LmNH0DlDA",
+        "latitude": 1.2540421,
+        "longitude": 103.8238084,
+        "address": "8 Sentosa Gateway, Singapore 098269",
+        "mapUrl": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/map.png",
+        "operatorName": "Universal Studios Singapore",
+        "googleOperatorName": "Universal Studios Singapore",
+        "isAdmissionProduct": true,
+        "isOperatorBookingProduct": false
+      },
+      "productSubcategories": [
+        {
+          "__typename": "ProductCategory",
+          "categoryId": "sc_theme_parks"
+        }
+      ],
+      "shortDescription": null,
+      "mediaData": [
+        {
+          "caption": null,
+          "description": null,
+          "name": "0_universal_studios_pelago.jpg",
+          "isHighlighted": null,
+          "mediaType": "photo",
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago.jpg",
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago-xlarge.webp"
+          }
+        },
+        {
+          "caption": null,
+          "description": null,
+          "name": "1_universal_studios_pelago",
+          "isHighlighted": null,
+          "mediaType": "photo",
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0.jpg",
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0341_universal_studios_pelago0-xlarge.webp"
+          }
+        },
+        {
+          "caption": null,
+          "description": null,
+          "name": "2_universal_studios_pelago.jpg",
+          "isHighlighted": null,
+          "mediaType": "photo",
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago.jpg",
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_2_universal_studios_pelago-xlarge.webp"
+          }
+        },
+        {
+          "caption": null,
+          "description": null,
+          "name": "3_universal_studios_pelago.jpg",
+          "isHighlighted": null,
+          "mediaType": "photo",
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago.jpg",
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1104-0342_3_universal_studios_pelago-xlarge.webp"
+          }
+        },
+        {
+          "caption": null,
+          "description": "Discover Your Good at Sentosa (10 Nov 2025 to 4 Jan 2026): Sentosa Island will be transformed into a spellbinding experience. Follow the Yellow Brick Road along Sentosa Sensoryscape all the way to the Emerald City in Resorts World Sentosa and experience the world of Wicked: For Good as the Lake of Dreams and Universal Studios Singapore are transformed, bringing the wonders of the film to life through larger-than-life installations, exciting retail and food options.  Get your own “Yours for Good” bracelet and start charm:  Purchase any of the Resorts World Sentosa Wonder Experiences to receive the exclusive bracelet and starter charm. Unlock money-can’t-buy privileges:  Enjoy priority entry to attractions, exclusive access to viewing zones, wondrous discounts, and more Collect limited-edition charms: Add more charms to your bracelet when you visit selected partners around Resorts World Sentosa and Sentosa Island.  Visit Resorts World Sentosa website for more details.",
+          "name": "6_universal_studios_pelago.jpg",
+          "isHighlighted": true,
+          "mediaType": "photo",
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm.jpeg",
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-xsmall.jpeg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-small.jpeg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-medium.jpeg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-large.jpeg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-xlarge.jpeg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1118-0631_whatsapp-image-2025-11-18-at-1.46.08-pm-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633.jpg",
+          "caption": "Step into the ultimate adventure at Universal Studios Singapore! From heart-pounding rides like Battlestar Galactica: HUMAN vs CYLON™ and TRANSFORMERS The Ride: The Ultimate 3D Battle to the splash-tastic Jurassic Park Rapids Adventure, thrills await for all ages.  ✨ Don’t miss Minion Land! Meet your favourite Minions, enjoy quirky rides, and snap fun photos in this whimsical, family-friendly area. Experience live entertainment, interactive shows, and meet other beloved Universal Studios characters. Shop, dine, and capture memories across the park’s themed areas — a perfect day out for family and friends",
+          "description": "Step into the ultimate adventure at Universal Studios Singapore! From heart-pounding rides like Battlestar Galactica: HUMAN vs CYLON™ and TRANSFORMERS The Ride: The Ultimate 3D Battle to the splash-tastic Jurassic Park Rapids Adventure, thrills await for all ages.  ✨ Don’t miss Minion Land! Meet your favourite Minions, enjoy quirky rides, and snap fun photos in this whimsical, family-friendly area. Experience live entertainment, interactive shows, and meet other beloved Universal Studios characters. Shop, dine, and capture memories across the park’s themed areas — a perfect day out for family and friends",
+          "name": "universal_studios_0001",
+          "isHighlighted": true,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_uss2328_uss-rise&dine_v1_minionfamily_1125x633-xlarge.webp"
+          },
+          "altText": "Step into a world where laughter and joy abound as friendly characters greet you. Enjoy unforgettable moments with family while exploring the magic of Universal Studios Singapore.",
+          "mediaType": "video",
+          "videoUrl": "https://youtu.be/SvMkPTSFRsU",
+          "videoPlatform": "youtube"
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe.jpg",
+          "caption": null,
+          "description": "The adventure begins here at Universal Studios! Ready for a day full of excitement, wonder, and unforgettable memories. Let’s go explore!",
+          "name": "universal_studios_02",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-globe-xlarge.webp"
+          },
+          "altText": "Step into a world of movie magic where iconic rides live shows and breathtaking attractions await. Experience unforgettable moments inspired by beloved films in a stunning setting."
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore.png",
+          "caption": "",
+          "name": "universal_studios_04",
+          "isHighlighted": false,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-xsmall.png",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-small.png",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-medium.png",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-large.png",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-xlarge.png",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/ac2369b3-1313-403c-9023-b2e757a8ec46_universal-studios-singapore-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends.jpg",
+          "caption": null,
+          "description": null,
+          "name": "universal_studios_05",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-zone_sci-fi_friends-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends.jpg",
+          "caption": null,
+          "description": ".",
+          "name": "universal_studios_06",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_friends-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in.jpg",
+          "caption": null,
+          "description": null,
+          "name": "universal_studios_08",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-f&b_mels-drive-in-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family.jpg",
+          "caption": null,
+          "description": null,
+          "name": "universal_studios_09",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-happily-ever-after_family-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends.jpg",
+          "caption": null,
+          "description": null,
+          "name": "universal_studios_10",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-megatron_friends-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends.jpg",
+          "caption": null,
+          "description": "Adventures with Puss in Boots and friends! The kids can't get enough of these swashbuckling heroes. Such a magical day together!",
+          "name": "universal_studios_11",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-puss-in-boots-and-kitty-softpaws_friends-xlarge.webp"
+          }
+        },
+        {
+          "url": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family.jpg",
+          "caption": null,
+          "description": "Hanging out with Elmo and Cookie Monster at Big Bird’s Emporium! The perfect day filled with laughter, love, and childhood favorites.",
+          "name": "universal_studios_12",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-xsmall.jpg",
+            "webpXsmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-xsmall.webp",
+            "small": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-small.jpg",
+            "webpSmall": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-small.webp",
+            "medium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-medium.jpg",
+            "webpMedium": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-medium.webp",
+            "large": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-large.jpg",
+            "webpLarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-large.webp",
+            "xlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-xlarge.jpg",
+            "webpXlarge": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/0702-1526_2022-uss-sesame-street_family-xlarge.webp"
+          }
+        }
+      ],
+      "productTags": [
+        {
+          "__typename": "ProductTag",
+          "tagId": "tag_krisflyer_exclusive"
+        },
+        {
+          "__typename": "ProductTag",
+          "tagId": "tag_families_with_kids"
+        },
+        {
+          "__typename": "ProductTag",
+          "tagId": "tag_iconic"
+        }
+      ],
+      "currency": "CAD",
+      "duration": "",
+      "guideLanguages": "English",
+      "cancellationType": "NO_CANCELLATION",
+      "cancellationTypeText": null,
+      "hideKfMiles": false,
+      "isKrisflyerExperience": false,
+      "minGroupSize": 2,
+      "maxGroupSize": 10,
+      "openDateTicket": false,
+      "collectPhysicalTicket": false,
+      "confirmationType": "INSTANT",
+      "confirmationTypeText": "Instant confirmation",
+      "voucherType": "PARTNER",
+      "redemptionType": "MOBILE",
+      "priceRangeFrom": 88,
+      "priceRangeTo": 723,
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "availabilityStartDate": "2025-12-11T12:52:52.780593+08:00",
+      "availabilityEndDate": "2026-05-10T12:52:52.953220+08:00",
+      "availableDates": [
+        "2025-12-11",
+        "2025-12-12",
+        "2025-12-13",
+        "2025-12-14",
+        "2025-12-15",
+        "2025-12-16",
+        "2025-12-17",
+        "2025-12-18",
+        "2025-12-19",
+        "2025-12-20",
+        "2025-12-21",
+        "2025-12-22",
+        "2025-12-23",
+        "2025-12-24",
+        "2025-12-25",
+        "2025-12-26",
+        "2025-12-27",
+        "2025-12-28",
+        "2025-12-29",
+        "2025-12-30",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-01-09",
+        "2026-01-10",
+        "2026-01-11",
+        "2026-01-12",
+        "2026-01-13",
+        "2026-01-14",
+        "2026-01-15",
+        "2026-01-16",
+        "2026-01-17",
+        "2026-01-18",
+        "2026-01-19",
+        "2026-01-20",
+        "2026-01-21",
+        "2026-01-22",
+        "2026-01-23",
+        "2026-01-24",
+        "2026-01-25",
+        "2026-01-26",
+        "2026-01-27",
+        "2026-01-28",
+        "2026-01-29",
+        "2026-01-30",
+        "2026-01-31",
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-03",
+        "2026-02-04",
+        "2026-02-05",
+        "2026-02-06",
+        "2026-02-07",
+        "2026-02-08",
+        "2026-02-09",
+        "2026-02-10",
+        "2026-02-11",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-14",
+        "2026-02-15",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-02-19",
+        "2026-02-20",
+        "2026-02-21",
+        "2026-02-22",
+        "2026-02-23",
+        "2026-02-24",
+        "2026-02-25",
+        "2026-02-26",
+        "2026-02-27",
+        "2026-02-28"
+      ],
+      "content": {
+        "headerMap": {
+          "allSections": [
+            "overview",
+            "imageHighlights",
+            "features",
+            "productOptions",
+            "additionalInfo",
+            "location",
+            "customerReviews",
+            "recommendedProducts",
+            "exploreTags"
+          ],
+          "sections": {
+            "overview": {
+              "headerLabel": "Overview",
+              "componentType": "overviewComponent",
+              "attributeId": "overview",
+              "allSections": [
+                "description",
+                "highlights"
+              ],
+              "sections": {
+                "description": {
+                  "text": "<h3>Get Ready for Blockbuster Fun</h3><p>Once you step past the iconic Universal globe at the park entrance, brace yourself for heart-pounding rides, immersive shows, and an array of thrilling attractions inspired by your favourite blockbuster movies and beloved television shows like the <em>Transformers</em> series, <em>Jurassic Park,</em> and <em>Puss in Boots.</em> These attractions are a must-visit for all ages. Get ready for an adventure like no other—let the excitement and fun unfold!</p><p><br></p><h3>Skip the Queue:</h3><p>Don't like to queue? Skip the lines with <a href=\"https://www.pelago.co/en/activity/p736l-universal-studios-singapore-express-pass-singapore/\" rel=\"noopener\" target=\"_blank\">Universal Studios Singapore Express Pass tickets</a>!</p>"
+                },
+                "highlights": {
+                  "text": "<ul><li>Hop on thrill rides like <em>Battlestar Galactica: HUMAN vs. CYLON™</em> or <em>TRANSFORMERS The Ride: The Ultimate 3D Battle</em> in Sci-Fi City.</li><li>Don't miss the Jurassic Park Rapids Adventure ride, one of the most unique experiences in Southeast Asia.</li><li>Enjoy exciting live entertainment and thrills at Southeast Asia's premier theme park, featuring award-winning interactive shows and adrenaline-pumping rides.</li><li>Keep an eye out for live performances while strolling around the park's themed areas; they are a must-see for all ages.</li><li>Get up close and personal with your favourite Universal Studios theme park characters and capture a picture or two with them.</li><li>Shop and dine at a variety of outlets around the park for a great time with family and friends.</li></ul>"
+                }
+              }
+            },
+            "imageHighlights": {
+              "title": "Highlights",
+              "headerLabel": "Highlights",
+              "componentType": "imageHighlightsComponent",
+              "attributeId": "image_highlights"
+            },
+            "features": {
+              "title": "What's Included",
+              "headerLabel": "What's Included",
+              "componentType": "featuresComponent",
+              "attributeId": "whats_included",
+              "allSections": [
+                "included"
+              ],
+              "sections": {
+                "included": {
+                  "heading": "INCLUDED",
+                  "listType": "checkmark",
+                  "listItems": [
+                    "Universal Studios Singapore Admission E-Ticket Pass"
+                  ]
+                }
+              }
+            },
+            "productOptions": {
+              "title": "Package Options",
+              "headerLabel": "Package Options",
+              "componentType": "productOptionsComponent",
+              "attributeId": "package_options"
+            },
+            "additionalInfo": {
+              "title": "Additional Information",
+              "headerLabel": "Additional Information",
+              "componentType": "additionalInfoComponent",
+              "attributeId": "additional_info",
+              "allSections": [
+                "operatingHours",
+                "aUniversalChristmas24Nov20254Jan2026",
+                "goodToKnow",
+                "eligibility",
+                "childpolicy",
+                "accessibility",
+                "bookingConfirmation",
+                "refundCancellationPolicy",
+                "redemptionNotes"
+              ],
+              "sections": {
+                "operatingHours": {
+                  "heading": "Operating Hours",
+                  "text": "<ul><li>Open daily from 10:00 AM to 7:00 PM.</li><li>Extended hours to 9:00 PM during Singapore school holidays and public holidays.</li><li>Operating hours for rides, shows, and the park may change without prior notice. Check the Universal Studios Singapore official website or Operating Calendar for updates, as hours may change without prior notice.</li><li>Selected rides, shows, street entertainment, meet-and-greet events, and experiences may be unavailable until further notice.</li></ul>"
+                },
+                "goodToKnow": {
+                  "heading": "Must Know",
+                  "text": "<ul><li>Skip the queue and save time at your favourite rides and attractions when you purchase <a href=\"https://www.pelago.co/en-SG/activity/p736l-universal-studios-singapore-express-pass-singapore/\" rel=\"noopener\" target=\"_blank\">Universal Express Passes</a>.</li><li>Outdoor attractions may close temporarily during lightning risks, with no refunds provided.</li><li>No outside food or beverages are permitted, except for infants or special medical needs.</li><li>Only contactless payments are accepted, including Mastercard, Visa, American Express, Diners, JCB, Union Pay, NETS, GrabPay, WeChat Pay, Alipay, MPay, NETS Pay, PayNow, Singtel Dash, Genting Dollars, and RWS Vouchers.</li><li>Universal Express Passes are available for purchase to skip queues at select rides and attractions. For latest information on available rides, attractions, and experiences, please <a href=\"https://www.rwsentosa.com/en/attractions/universal-studios-singapore\" rel=\"noopener\" target=\"_blank\">check for advisories</a>.</li><li>Amber Rock Climb, Elmo's TV Time, Donkey Live, and WaterWorld are temporarily closed until further notice.</li><li>For the best experience, wear comfortable clothes and shoes. Bring a spare set of clothes, as some attractions may get you wet.</li><li>All sales and renewals of Annual and Season Passes are temporarily suspended.</li></ul>"
+                },
+                "eligibility": {
+                  "heading": "Eligibility",
+                  "text": "<ul><li>Tickets are valid for all guests with a valid QR code ticket. Each guest must scan their respective QR code at the entrance.</li><li>Guests must comply with ride-specific age, height, weight, and health restrictions, available in the <a href=\"https://www.rwsentosa.com/-/jssmedia/project/non-gaming/rwsentosa/attractions/universal-studios-singapore/uss-riders-guide-en.pdf?rev=fa5ec7f20ab84d408c42872313c1a204&amp;sc_lang=en&amp;hash=3B8FC7CA9DA1CC54DBB77EEE475E384E\" rel=\"noopener\" target=\"_blank\">Rider’s Guide</a> or at each attraction.</li><li>The attraction reserves the right to request identification to verify ticket eligibility.</li></ul>"
+                },
+                "childpolicy": {
+                  "heading": "Child Policy",
+                  "text": "<ul><li>Child tickets apply to ages 4 to 12.</li><li>Children under 122 cm in height must be accompanied by a Supervising Companion (aged 14 or older) who meets all ride requirements, except at Magic Potion Spin, where children under 110 cm need a parent or guardian.</li><li>Hand-held infants are not permitted on certain attractions for safety reasons.</li><li>Young children must walk to and from ride vehicle seats unassisted and have the body and spinal control to sit upright without aid.</li><li>The Child Swap Programme allows one parent to wait with a child while others ride, then swap without re-queueing. Contact attraction team members or Guest Services for details.</li><li>The Baby Care Centre at the park entrance offers nursing facilities, a baby changing area, and formula preparation stations.</li></ul>"
+                },
+                "accessibility": {
+                  "heading": "Accessibility",
+                  "text": "<ul><li>The park offers accessibility options for guests with disabilities. Refer to the <a href=\"https://www.rwsentosa.com/-/jssmedia/project/non-gaming/rwsentosa/attractions/universal-studios-singapore/uss-riders-guide-en.pdf?rev=fa5ec7f20ab84d408c42872313c1a204&amp;sc_lang=en&amp;hash=3B8FC7CA9DA1CC54DBB77EEE475E384E\" rel=\"noopener\" target=\"_blank\">Rider’s Guide</a> for detailed safety and accessibility information.</li><li>Nursing facilities and a Baby Care Centre are available for families with young children.</li></ul>"
+                },
+                "bookingConfirmation": {
+                  "heading": "Booking Confirmation",
+                  "text": "<p>Your booking will be confirmed by the provider instantly.</p>"
+                },
+                "refundCancellationPolicy": {
+                  "heading": "Cancellation Policy",
+                  "text": "<ul><li>No cancellations and refunds are allowed for this activity.</li><li>Tickets are non-transferable, non-refundable, and not for sale or exchange, even in cases of inclement weather.</li></ul>"
+                },
+                "redemptionNotes": {
+                  "heading": "Voucher Use",
+                  "text": "<p>Present your mobile ticket with QR code at the Universal Studios Singapore entrance gantry for direct park entry.</p><p>Upon booking confirmation, the admission ticket is valid only on the selected date.</p>"
+                },
+                "aUniversalChristmas24Nov20254Jan2026": {
+                  "heading": "A Universal Christmas (24 Nov 2025 - 4 Jan 2026)",
+                  "text": "<p>Celebrate the holidays at Universal Studios Singapore with more than just thrilling rides! Enjoy Santa’s high-energy festive show featuring lights, music and magical snowfall. Watch the Far Far Away Castle transform at night with a stunning projection-mapping display, meet your favourite characters in their Christmas outfits, and savour limited-time festive treats throughout the park.</p><p><br></p><ul><li><strong>Santa’s Rockmas: Sleigh All Day: </strong>See Santa’s rockstar makeover with Elmo, Abby, and Cookie Monster, enjoy his new musical groove, magical snowfall, and a photo moment with the Sesame Street friends.</li><li><strong>Santa’s Rockmas: Rock All Night: </strong>Join Shrek and the Penguins of Madagascar as they help Santa rock the stage; cheer to light up the 10-metre tree, New York Street, and enjoy a snowfall.</li><li><strong>Lake Hollywood Christmas Fireworks: </strong>End the day with a dramatic fireworks show over Lake Hollywood, set to a powerful musical score.</li><li><strong>Mel’s Merry Mixtape: </strong>Enjoy a lively performance of holiday hits from every decade by the Universal Singers.</li><li><strong>A Despicably Merry Meet &amp; Greet: </strong>Meet Gru, Lucy, the girls, and the Minions in festive outfits and snap a mischief-filled holiday photo.</li><li><strong>DreamWorks Animation Holiday Spectacular: </strong>Be dazzled at night by a projection-mapping show that brings DreamWorks worlds to life on the Far Far Away Castle.</li><li><strong>Jolly Ogre Meet &amp; Greet: </strong>Visit Far Far Away to meet Shrek and Princess Fiona in their Christmas best for a fairytale photo.</li><li><strong>Yuletide Yummies: </strong>Enjoy festive food across the park, from sweet treats to hearty Christmas mains.</li></ul><p><br></p><p><em>The merriest event of the year awaits!</em></p>"
+                }
+              }
+            },
+            "location": {
+              "title": "Location",
+              "headerLabel": "Location",
+              "componentType": "locationComponent",
+              "attributeId": "location_map",
+              "allSections": [
+                "address"
+              ],
+              "sections": {
+                "address": {
+                  "heading": "Address",
+                  "text": "Universal Studios Singapore, 8 Sentosa Gateway, Singapore 098269"
+                }
+              }
+            },
+            "customerReviews": {
+              "title": "Customer Reviews",
+              "headerLabel": "Customer Reviews",
+              "componentType": "customerReviewsComponent",
+              "attributeId": "customer_reviews"
+            },
+            "recommendedProducts": {
+              "title": "You Might Also Like",
+              "headerLabel": "You Might Also Like",
+              "componentType": "recommendedProductsComponent",
+              "attributeId": "related_products"
+            },
+            "exploreTags": {
+              "title": "Explore Similar Things To Do",
+              "headerLabel": "Explore Similar Things To Do",
+              "componentType": "exploreTagsComponent",
+              "attributeId": "explore_product_tags"
+            }
+          }
+        },
+        "shortDescription": null,
+        "specialNotes": null
+      },
+      "productMetaView": null,
+      "status": "PUBLISHED",
+      "rating": 4.43,
+      "ratingDistribution": {
+        "1": 6.1,
+        "2": 2.84,
+        "3": 6.1,
+        "4": 11.42,
+        "5": 73.55
+      },
+      "reviewCount": 2820,
+      "reviewSummary": "Universal Studios Singapore Tickets on Pelago are highly praised for their seamless booking and redemption process, often enhanced by discounts and KrisFlyer miles. Visitors enjoy the thrilling rides and attractions, with highlights like Transformers and Jurassic Park. The park's atmosphere and friendly staff contribute to an enjoyable experience for all ages, making it a recommended destination for families and thrill-seekers alike.",
+      "trackMeta": {},
+      "contentLang": "en",
+      "originalContentLang": "en",
+      "wishlistedCustomerCount": 5149,
+      "strikeOffDiscountValue": null,
+      "strikeOffDiscountType": null,
+      "isKfExclusive": false,
+      "isLowestPriceKfExclusive": false,
+      "branding": null,
+      "metaTags": {
+        "title": "Universal Studios Singapore Tickets in Singapore | Pelago",
+        "description": "Experience movie magic at Universal Studios Singapore. Book tickets with Pelago to enjoy rides, shows and family fun across seven themed zones.",
+        "h1": "Universal Studios Singapore Tickets in Singapore",
+        "ogTitle": "Universal Studios Singapore Tickets in Singapore | Pelago",
+        "ogDescription": "Experience movie magic at Universal Studios Singapore. Book tickets with Pelago to enjoy rides, shows and family fun across seven themed zones.",
+        "ogImage": "https://www.pelago.com/img/products/SG-Singapore/rws-universal-studios-ticket/1126-0235_7_universal_studios_pelago.jpg",
+        "ogProductId": "pok40",
+        "ogProductAvailability": "in stock",
+        "ogProductPriceAmount": "63.6",
+        "ogProductPriceCurrency": "USD",
+        "ogSiteName": "Pelago",
+        "ogBrand": "Pelago",
+        "ogLocale": "en",
+        "ogProductLocale": "en",
+        "ogProductCondition": "new"
+      },
+      "faqs": {
+        "sections": [
+          {
+            "question": "How do I get to Universal Studios Singapore?",
+            "answer": "The best way to reach Universal Studios is by taking the train to HarbourFront MRT, then transferring to the monorail to Resorts World Station. If you're driving, parking is available at the Resorts World Sentosa car park. For a more scenic route, take the cable car, disembark at Imbiah Station, and then hop on the Sentosa Express, alighting one stop later at Resorts World Station."
+          },
+          {
+            "question": "Can I buy Universal Studios Singapore tickets at the gate?",
+            "answer": "Absolutely! You can buy tickets at the booths by the entrance. Just keep in mind that getting a USS ticket depends on availability, and you might encounter long queues. For a smoother experience, guaranteed entry, better prices, and to avoid those pesky lines, it's a good idea to purchase your tickets online before you go."
+          },
+          {
+            "question": "Are there any age or height restrictions for the rides at Universal Studios Singapore?",
+            "answer": "The minimum height requirement at Universal Studios Singapore is 92 cm. Children between 92 cm and 122 cm must be accompanied by a supervising companion. You can also check the height requirements on the official USS mobile app."
+          },
+          {
+            "question": "Is Universal Studios Singapore child-friendly?",
+            "answer": "Yes, Universal Studios Singapore is child-friendly. Children aged 3 and below can enter for free, and ride restrictions are based on height, not age."
+          },
+          {
+            "question": "Can I bring my own food and drinks into Universal Studios Singapore?",
+            "answer": "No, outside food and drinks are not permitted inside Universal Studios Singapore. However, there are plenty of food and beverage options available within the park, catering to a variety of preferences."
+          },
+          {
+            "question": "Is there a dress code for Universal Studios Singapore?",
+            "answer": "There is no specific dress code for Universal Studios Singapore, but guests are encouraged to dress comfortably and appropriately for the weather and the attractions within the park."
+          },
+          {
+            "question": "What types of rides are at Universal Studios Singapore?",
+            "answer": "Some popular rides at Universal Studios across the themed zones include Revenge of the Mummy, a high-speed roller coaster that goes backwards; Battlestar Galactica: Human vs. Cyclon, the most intense roller coaster in the park; and the Jurassic Park Rapids Adventure ride. Don't miss the Transformers Ride, Enchanted Airways, and Puss in Boots' Giant Journey as well; these are exciting attractions based on your favourite blockbuster films and television series."
+          },
+          {
+            "question": "What is there to do in Minion Land Singapore?",
+            "answer": "At Minion Land in Universal Studios Singapore, you'll dive into the vibrant world of your favourite Despicable Me and Minions movies! Meet the cheeky Minions and enjoy some fun attractions. Don't miss Despicable Me Minion Mayhem—a thrilling 3D ride that takes you on a wild adventure! And be sure to hop on the Buggie Boogie carousel, where you can groove to catchy dance music remixed by the Minions."
+          },
+          {
+            "question": "Is there a Wizarding World of Harry Potter in Universal Studios Singapore?",
+            "answer": "No, there are no Hogwarts-themed attractions at USS, including any experiences or rides related to the Wizarding World of Harry Potter."
+          },
+          {
+            "question": "Are there any shows at Universal Studios Singapore?",
+            "answer": "Yes, Universal Studios offers a variety of shows on-site, including WaterWorld, The Dance for the Magic Beans, Lights, Camera, Action!, and the Shrek 4-D Adventure ride. The showtimes at USS vary, but most shows typically run for about 20 to 30 minutes."
+          },
+          {
+            "question": "Is the Universal Studios Express Pass worth getting?",
+            "answer": "Yes, <a href=\"https://www.pelago.com/en/activity/p736l-universal-studios-singapore-express-pass-singapore/\" target=\"_blank\">the USS Express Pass is worth getting</a> and is extremely convenient for cutting waiting times. When you purchase the Universal Express Pass, you save time waiting in lengthy queues that feel like ages and can enjoy repeat rides and shows as many times as you want. After all, who doesn't like to skip queues, save time, or ride their favourite roller coaster again?"
+          },
+          {
+            "question": "How much is a meal at Universal Studios Singapore?",
+            "answer": "The price of a meal varies at Universal Studios eateries, but you can expect to pay roughly SGD 15 to SGD 20 for a single dish. For instance, Loui's Pizza, which serves New York-style food at USS, offers beef meatball mac and cheese for SGD 15 and spaghetti bolognese for SGD 14. Meanwhile, at Goldilocks, you can enjoy three pieces of fried chicken, a drink, and tater tots for SGD 18.50."
+          },
+          {
+            "question": "Does Universal Studios Singapore have Muslim-friendly and Halal-certified dining options?",
+            "answer": "Yes, there are plenty of halal options at USS to indulge your taste buds. The park boasts a choice of three distinct halal restaurants, offering a variety of Western favourites and local delights—from the Egyptian-inspired Oasis Spice Café in the Ancient Egypt zone to the retro American-themed Mel's Drive-In."
+          },
+          {
+            "question": "Which hotels are near USS?",
+            "answer": "Hotels near Universal Studios, such as Crockfords Tower, Hotel Michael, Hard Rock Hotel Singapore, Hotel Ora, and Equarius Hotel in the integrated resort, are all conveniently located within walking distance of the park."
+          },
+          {
+            "question": "How much do Universal Studios Singapore ticket prices cost?",
+            "answer": "Universal Studios Singapore ticket prices start from SGD 83 for Standard Admission tickets and SGD 144 for the USS + SEAA Double Fun Package, which includes additional perks like admission to the S.E.A. Aquarium and meal vouchers."
+          },
+          {
+            "question": "Is the Universal Studios Singapore VIP Pass worth it?",
+            "answer": "Yes, the <a href=\"https://www.pelago.com/en/activity/pqgm5-uss-universal-studios-singapore-vip-pass-singapore/\" target=\"_blank\">Universal Studios VIP Experience is definitely worth it</a>! It offers priority access to rides and shows, making you feel like a visiting celebrity and providing the ultimate theme park experience—think of it as an upgraded version of the Express Pass."
+          },
+          {
+            "question": "Is the ticket for local residents or visitors (tourists/travellers)?",
+            "answer": "Unless otherwise stated in the product option, tickets can be used by both local residents and visitors"
+          }
+        ],
+        "attributeId": "faqs",
+        "title": "Frequently asked questions"
+      },
+      "productBucket": {
+        "__typename": "ProductBucketLabel",
+        "id": "top_by_destination",
+        "label": "Top 10"
+      }
+    },
+    "productOptionsData": {
+      "__typename": "ProductOptionsData",
+      "loyaltyRewardsBanner": "Earn 1 mile per S$1 spent",
+      "productOptionsData": [
+        {
+          "__typename": "ProductOption",
+          "optionId": "f3cb3d6e-db81-4b0e-96c7-7ce5966cc0cd",
+          "optionName": "Universal Studios Singapore Direct Entry Admission + Minion Land [Peak]",
+          "optionRank": null,
+          "bestSeller": true,
+          "content": {
+            "note": null,
+            "text": "<ul><li>Standard Admission tickets including the new Minion Land will only be available for use on the date(s) specified.</li><li>Tickets cannot be exchanged or refunded.</li><li>Certain shows, street entertainment, and amusements may not be available until further notice.</li><li><strong>[For Adult Tickets until 31 December 2025] $5 F&amp;B Voucher</strong>:&nbsp;Min spend $25. Valid at Universal Studios Singapore restaurants &amp; food carts. Not applicable for souvenir/alcoholic beverages.&nbsp;Excludes Roving carts, Starbucks, Oasis Spice Café and Me Want Cookie!. 1 voucher per transaction.</li><li><strong>[For Adult Tickets until 31 December 2025] $5 Retail Voucher</strong>:&nbsp;Min spend $60. Redeemable at all USS retail outlet excludes Carnival Games, Roving Carts, Digiphoto products/services &amp; Mighty&nbsp;Jaxx merchandise. 1 voucher per transaction. Product exclusions apply.</li></ul>"
+          },
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": [],
+          "selectorMetaData": {
+            "all_selectors": []
+          },
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 88,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "405a40d7-21f7-4011-a57c-18f83be15983": 82,
+            "fe298b95-162f-407d-b196-d838aae4a7be": 65
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        },
+        {
+          "__typename": "ProductOption",
+          "optionId": "f6a0c430-5245-4c40-9b81-762972ef25ec",
+          "optionName": "Universal Studios Singapore Christmas Package [2 Adult] - Save $40",
+          "optionRank": null,
+          "bestSeller": false,
+          "content": {
+            "note": null,
+            "text": "<ul><li>Priority entry into Universal Studios Singapore</li><li>Universal Express Pass for 2 Adults (Not valid at Magic Potion Spin, Canopy Flyer, Treasure Hunters, Ready, Set, Rescue! and Front Row on Battlestar Galactica: Human vs. Cylon and other selected Attractions.)</li><li>$5 F&amp;B Voucher. Min spend $25. Valid at Universal Studios Singapore restaurants &amp; food carts. Not applicable for souvenir/alcoholic beverages. Excludes Roving carts, Starbucks, Oasis Spice Café and Me Want Cookie!. 1 voucher per transaction.</li><li>Yours For Good Bracelet Redemption Voucher. For more information on Yours For Good Bracelet Charm privileges/benefits <a href=\"https://www.rwsentosa.com/en/events/discover-your-good-sentosa/bracelet-bundles/charm-privileges\" rel=\"noopener\" target=\"_blank\">please click here</a>.</li><li>1-Day 2 Adult Admission</li><li>Exclusive “Yours for Good” Bracelets and Starter Charms (2 pcs)&nbsp;for exclusive privileges:<br>1. Priority queue at selected Resorts World Sentosa attractions​ <b>Universal Studios Singapore</b>: ​<br>- Priority entry access at Turnstile​<br>- Priority Viewing Zone - NY Night Show (only start 28 Nov) - first 50 bracelet holder per show​<br>2. Priority queue at Pierre Herme​<br>3. 10% discount at RWS Signature restaurants</li></ul>"
+          },
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": [],
+          "selectorMetaData": {
+            "all_selectors": []
+          },
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 380,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "1a9206a6-eb5e-49ae-b069-127a46eab942": 353
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        },
+        {
+          "__typename": "ProductOption",
+          "optionId": "1b770720-5333-49ad-9022-a81bcda8ae44",
+          "optionName": "Admission Ticket",
+          "optionRank": null,
+          "bestSeller": false,
+          "content": {},
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": null,
+          "selectorMetaData": {},
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2026-01-01",
+            "priceRangeFrom": 93,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "024abce0-80a0-4244-9b7c-368f8d23982f": 86,
+            "c209f119-722c-4aea-bb6d-4db867c61217": 76
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        },
+        {
+          "__typename": "ProductOption",
+          "optionId": "a88e1df7-e138-424a-819a-7aa6bf72a316",
+          "optionName": "Universal Studios Singapore Christmas Package [2 Adult & 2 Child] - Save $80",
+          "optionRank": null,
+          "bestSeller": false,
+          "content": {
+            "note": null,
+            "text": "<ul><li>Priority entry into Universal Studios Singapore</li><li>Universal Express Pass for 2 Adults and 2 Children (Not valid at Magic Potion Spin, Canopy Flyer, Treasure Hunters, Ready, Set, Rescue! and Front Row on Battlestar Galactica: Human vs. Cylon and other selected Attractions.)</li><li>$5 F&amp;B Voucher. Min spend $25. Valid at Universal Studios Singapore restaurants &amp; food carts. Not applicable for souvenir/alcoholic beverages. Excludes Roving carts, Starbucks, Oasis Spice Café and Me Want Cookie!. 1 voucher per transaction.</li><li>Yours For Good Bracelet Redemption Voucher. For more information on Yours For Good Bracelet Charm privileges/benefits <a href=\"https://www.rwsentosa.com/en/events/discover-your-good-sentosa/bracelet-bundles/charm-privileges\" rel=\"noopener\" target=\"_blank\">please click here</a>.</li><li>1-Day 2 Adult &amp; 2 Children Admission</li><li>Exclusive “Yours for Good” Bracelets and Starter Charms (2 pcs)&nbsp;for exclusive privileges:<br>1. Priority queue at selected Resorts World Sentosa attractions​ <b>Universal Studios Singapore</b>: ​<br>- Priority entry access at Turnstile​<br>- Priority Viewing Zone - NY Night Show (only start 28 Nov) - first 50 bracelet holder per show​<br>2. Priority queue at Pierre Herme​<br>3. 10% discount at RWS Signature restaurants</li></ul>"
+          },
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": [],
+          "selectorMetaData": {
+            "all_selectors": []
+          },
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 723,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "d36933c2-222c-49ea-9791-dbabacc0a81e": 671
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        },
+        {
+          "__typename": "ProductOption",
+          "optionId": "003b904a-87ee-4beb-a198-4ed8775bac2c",
+          "optionName": "Universal Studios Singapore (Peak) + Singapore Cable Car",
+          "optionRank": null,
+          "bestSeller": false,
+          "content": {},
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": null,
+          "selectorMetaData": {},
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 148,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "2a354285-f8d1-4048-b1ff-9cdb1efb61cb": 138,
+            "e31d9c2a-78f8-4902-af4d-17c3647ef994": 102
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        },
+        {
+          "__typename": "ProductOption",
+          "optionId": "100540dd-c1f4-4b71-bc1b-af380d0b519d",
+          "optionName": "Universal Studios Singapore Direct Entry Admission + Minion Land [Peak]",
+          "optionRank": null,
+          "bestSeller": false,
+          "content": {
+            "note": null,
+            "text": "<p><strong>KrisFlyer Exclusives: earn 4 miles per 1 SGD spent (with min. spending of S$100)</strong></p><ul><li>Standard Admission tickets including the new Minion Land will only be available for use on the date(s) specified.</li><li>Tickets cannot be exchanged or refunded.</li><li>Certain shows, street entertainment, and amusements may not be available until further notice.</li><li><strong>[For Adult Tickets until 31 December 2025] $5 F&amp;B Voucher</strong>:&nbsp;Min spend $25. Valid at Universal Studios Singapore restaurants &amp; food carts. Not applicable for souvenir/alcoholic beverages.&nbsp;Excludes Roving carts, Starbucks, Oasis Spice Café and Me Want Cookie!. 1 voucher per transaction.</li><li><strong>[For Adult Tickets until 31 December 2025] $5 Retail Voucher</strong>:&nbsp;Min spend $60. Redeemable at all USS retail outlet excludes Carnival Games, Roving Carts, Digiphoto products/services &amp; Mighty&nbsp;Jaxx merchandise. 1 voucher per transaction. Product exclusions apply.</li></ul>"
+          },
+          "minimumQuantity": null,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": [],
+          "selectorMetaData": {
+            "all_selectors": []
+          },
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 88,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": true,
+          "kfExclusiveLabel": "Earn 4 MPD",
+          "branding": {
+            "__typename": "Branding",
+            "brandId": "krisflyer_exclusives",
+            "brandName": "KrisFlyer Exclusives",
+            "brandShortName": "KrisFlyer",
+            "brandUrl": null,
+            "brandBannerText": "available",
+            "brandBannerConfig": {
+              "bgColor": "linear-gradient(90deg, rgba(25, 55, 205, 0.15) -0.21%, rgba(100, 200, 255, 0.15) 100%), #FFFFFF",
+              "textColor": "#000000",
+              "nameColor": "#1937CD"
+            },
+            "brandLogo": {
+              "info": "https://www.pelago.co/img/common/kf-exclusive-info-logo.svg"
+            },
+            "brandContent": {
+              "header": "KrisFlyer Exclusives",
+              "title": "Fresh deals dropped every month! Get bonus miles and more deals all-year-round.",
+              "content": "<p>As part of the Singapore Airlines Group, Pelago gives KrisFlyer members more ways to explore, and more ways to earn miles.</p>"
+            }
+          },
+          "loyaltyRewards": {
+            "7437e90c-8df6-4a92-8568-f49eb1090d98": 326,
+            "2a2554cc-1a6d-45db-84a3-3c5e325b6fc4": 259
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        }
+      ]
+    },
+    "optionGroups": {
+      "__typename": "OptionGroupsOutput",
+      "optionGroups": [
+        {
+          "__typename": "OptionGroup",
+          "groupId": "adfdda73-7bbe-4921-9149-1b1567816992",
+          "groupName": "KrisFlyer Exclusives",
+          "groupType": "kf_exclusive",
+          "optionIds": [
+            "100540dd-c1f4-4b71-bc1b-af380d0b519d"
+          ]
+        },
+        {
+          "__typename": "OptionGroup",
+          "groupId": "996baf7b-2201-447c-a2e0-4a4e57f2df97",
+          "groupName": "Admission Only",
+          "groupType": null,
+          "optionIds": [
+            "f3cb3d6e-db81-4b0e-96c7-7ce5966cc0cd"
+          ]
+        },
+        {
+          "__typename": "OptionGroup",
+          "groupId": "d98586f5-05a4-4400-adc6-53cde69b8251",
+          "groupName": "Christmas Package",
+          "groupType": null,
+          "optionIds": [
+            "a88e1df7-e138-424a-819a-7aa6bf72a316",
+            "f6a0c430-5245-4c40-9b81-762972ef25ec"
+          ]
+        }
+      ]
+    },
+    "productReviewsDetails": {
+      "__typename": "ReviewDataHistory",
+      "reviews": [
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-12-03T00:00:00",
+          "rating": 5,
+          "reviewId": "bed1d4ec-8ae5-4105-be7a-3254df7ff228",
+          "reviewDate": "2025-12-08T05:52:57.275241",
+          "comment": "Tickets were super easy, could go straight to gate. Great day!!",
+          "status": "PUBLISHED",
+          "travellerType": "Couple",
+          "firstName": "Emma",
+          "lastName": "Ruby",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-22T00:00:00",
+          "rating": 5,
+          "reviewId": "ea15c890-ccf2-4842-90c4-b599616895dc",
+          "reviewDate": "2025-11-23T06:37:28.497932",
+          "comment": "easy to redeem and pelago made my booking so easy, customer oriented. thanks for the great expercience!",
+          "status": "PUBLISHED",
+          "travellerType": "Group of Friends",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-17T00:00:00",
+          "rating": 5,
+          "reviewId": "a26f9826-2348-4659-8fc3-777f01a8c898",
+          "reviewDate": "2025-11-18T02:04:01.037395",
+          "comment": "A fantastic day out. Great atmosphere, very clean and staff were friendly. Rides are great fun. Awesome theming, lots of character meet and greets. Please don’t compare it to the ones in the USA. Go with the right mindset and you’ll have the best time. We loved it. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "CLAIRELOUISE",
+          "lastName": "WALKER",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-12-04T00:00:00",
+          "rating": 5,
+          "reviewId": "7c92e0e2-85ae-4740-b2c6-33666c7bb135",
+          "reviewDate": "2025-12-05T02:06:28.905017",
+          "comment": "the whole booking process and confirmation was fast, efficient and hassle free. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-23T00:00:00",
+          "rating": 5,
+          "reviewId": "3e03689a-1fd6-4866-962d-ad9da388a14f",
+          "reviewDate": "2025-11-30T01:38:39.436446",
+          "comment": "Quick access and great experience ",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-24T00:00:00",
+          "rating": 5,
+          "reviewId": "e596d95b-9fdd-4c6f-b1ec-9560f6fb983f",
+          "reviewDate": "2025-11-26T01:11:53.406301",
+          "comment": "Universal was great, we visited on a Monday and it was quiet. Not long to wait for rides and the rides, activities and shows were amazing.",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-24T00:00:00",
+          "rating": 5,
+          "reviewId": "9d98c5a5-9d5a-457c-97d9-450be8af94e3",
+          "reviewDate": "2025-11-24T01:31:25.246581",
+          "comment": "Super easy app booking ",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-29T00:00:00",
+          "rating": 5,
+          "reviewId": "1b32d382-4d53-4434-9b4c-938014f32193",
+          "reviewDate": "2025-12-03T03:59:48.833521",
+          "comment": "Easy to browse and purchase tickets. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Alice",
+          "lastName": "He",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-24T00:00:00",
+          "rating": 5,
+          "reviewId": "d34351b5-2693-4b30-bcc2-14e48dd63d3c",
+          "reviewDate": "2025-11-25T19:13:02.904510",
+          "comment": "Easy way to book the USS tickets",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-31T00:00:00",
+          "rating": 4,
+          "reviewId": "87431618-af46-4d86-aa64-f16f4cab53d0",
+          "reviewDate": "2025-11-26T02:49:44.219346",
+          "comment": "Worked as expected. Easy access with QR",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Raymond",
+          "lastName": "Moral",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-30T00:00:00",
+          "rating": 4,
+          "reviewId": "664f097c-48e6-4cc9-be1e-7550774c1122",
+          "reviewDate": "2025-12-01T11:16:37.209638",
+          "comment": "Nice smooth good experience ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-01T00:00:00",
+          "rating": 5,
+          "reviewId": "d1d4a8a2-c64d-4699-adab-fe92dae5ccc5",
+          "reviewDate": "2025-11-08T01:45:13.644466",
+          "comment": "Very convenient!\nI just need to show the qr code and that's it\nLess hassle to queue to buy the ticket\nVery recommended",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-07T00:00:00",
+          "rating": 5,
+          "reviewId": "41fc305c-57a5-421a-b3e2-01acf0b2fbc1",
+          "reviewDate": "2025-11-14T07:16:11.657088",
+          "comment": "We have enjoyed the day in Universal Studios with discounted tickets. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Sanket ",
+          "lastName": "Kargathra",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-08T00:00:00",
+          "rating": 5,
+          "reviewId": "6a31b0f6-dcb6-4fa8-8ade-211e7495b51a",
+          "reviewDate": "2025-10-31T00:06:37.663657",
+          "comment": "Fun family day out. Not as big as Universal Studios in other countries, but it meant we got to do practically everything there and some rides twice! Ride wait times varied greatly throughout the day so only had to wait a long time twice. Definitely recommend going on Transformers ride early before it gets busy - it's a must-do ride!",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "Jennifer",
+          "lastName": "Ross",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-11T00:00:00",
+          "rating": 5,
+          "reviewId": "0de67e54-d9d6-42ab-b99a-efab6c3d7f10",
+          "reviewDate": "2025-11-12T13:57:46.056482",
+          "comment": "Amazing !!! Kids really happy",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-10T00:00:00",
+          "rating": 5,
+          "reviewId": "1abf1301-7f9f-494c-bc08-05e40383a763",
+          "reviewDate": "2025-11-11T07:03:34.460296",
+          "comment": "easy to purchase and the extra bonus vouchers were a nice surprise. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-27T00:00:00",
+          "rating": 5,
+          "reviewId": "9c4d629d-2c04-4043-b681-68ba3656d971",
+          "reviewDate": "2025-11-03T23:06:49.289006",
+          "comment": "Easy and efficient way to obtain tickets at a great price!",
+          "status": "PUBLISHED",
+          "travellerType": "Couple",
+          "firstName": "Natalie",
+          "lastName": "Battersby",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-01T00:00:00",
+          "rating": 5,
+          "reviewId": "5edb0809-1909-4506-9819-ffe44584dea4",
+          "reviewDate": "2025-11-08T01:44:51.786821",
+          "comment": "Very convenient!\nI just need to show the qr code and that's it\nLess hassle to queue to buy the ticket",
+          "status": "PUBLISHED",
+          "travellerType": null,
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-26T00:00:00",
+          "rating": 4,
+          "reviewId": "90e5cf29-2a12-4d02-bd05-e6b9a86a6258",
+          "reviewDate": "2025-11-02T11:44:05.505483",
+          "comment": "Fantastic experience, but I expected bigger theme park. \nWaiting time around 10 minutes per attraction.. super fast!, no VIP Pass needed so far.\nMummy and Transformers my favorite attractions ",
+          "status": "PUBLISHED",
+          "travellerType": "Solo Traveller",
+          "firstName": "Alex",
+          "lastName": "Puente",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-27T00:00:00",
+          "rating": 4,
+          "reviewId": "5c7f607d-9754-4334-8fa0-cd29b9d9db34",
+          "reviewDate": "2025-10-28T02:42:16.319004",
+          "comment": "A great day out. Teenagers enjoyed the rides, we all enjoyed the shows and atmosphere. Loved the themed food options. A great day out. \n\nWe haven't been to any other Universal parks around the world, so the fact it is apparently a small version in comparison didn't bother us at all. ",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "Melissa",
+          "lastName": "Marfleet",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-30T00:00:00",
+          "rating": 5,
+          "reviewId": "663d4439-736c-4510-b74a-afa037dd8a93",
+          "reviewDate": "2025-11-04T23:18:08.864396",
+          "comment": "Had a wonderful day. Made a big difference having express passes for the rides",
+          "status": "PUBLISHED",
+          "travellerType": "Group of Friends",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-04T00:00:00",
+          "rating": 4,
+          "reviewId": "492f4d9f-7f19-432c-9b55-ec53c6ddd081",
+          "reviewDate": "2025-11-06T02:25:31.553489",
+          "comment": "Easy booking process and collection of tickets ",
+          "status": "PUBLISHED",
+          "travellerType": "Couple",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-30T00:00:00",
+          "rating": 5,
+          "reviewId": "ec2ce5bf-b42c-46d6-b616-4538f30e04bf",
+          "reviewDate": "2025-10-31T02:12:34.217553",
+          "comment": "Clean park, not too busy. Booking through Pelago was easy",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "Verified Traveller",
+          "lastName": "",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-10-26T00:00:00",
+          "rating": 5,
+          "reviewId": "9e4240a7-7dc3-4095-a6b7-39508b79e99b",
+          "reviewDate": "2025-10-28T03:28:49.139025",
+          "comment": "Easy to purchase and super easy to use at USS gate!",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "Panut",
+          "lastName": "Makkasaman",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2025-11-03T00:00:00",
+          "rating": 5,
+          "reviewId": "d137e612-bf85-46dc-9ebb-caaf9968739f",
+          "reviewDate": "2025-11-04T10:07:52.867289",
+          "comment": "Unforgettable experience. Highly recommended!",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with young kids)",
+          "firstName": "YASH DEV",
+          "lastName": "SEKRI",
+          "externalSource": null
+        }
+      ],
+      "reviewCount": 2820
+    },
+    "productReviewTags": {
+      "__typename": "ProductReviewTags",
+      "productReviewTags": [
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 1369,
+          "positiveReviewCount": 1134,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "activity_experience",
+            "reviewTagName": "Activity Experience"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 834,
+          "positiveReviewCount": 742,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "general_feedback",
+            "reviewTagName": "General Feedback"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 557,
+          "positiveReviewCount": 498,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "platform_booking_process",
+            "reviewTagName": "Platform Booking Process"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 263,
+          "positiveReviewCount": 177,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "value_for_money",
+            "reviewTagName": "Value For Money"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 186,
+          "positiveReviewCount": 158,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "pelago",
+            "reviewTagName": "Pelago"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 184,
+          "positiveReviewCount": 157,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "redemption_process",
+            "reviewTagName": "Redemption Process"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 171,
+          "positiveReviewCount": 148,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "offers_and_promotions",
+            "reviewTagName": "Offers And Promotions"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 164,
+          "positiveReviewCount": 127,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "kids_friendly",
+            "reviewTagName": "Kids Friendly"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 111,
+          "positiveReviewCount": 92,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "recommend_service_to_other",
+            "reviewTagName": "Recommend Service To Other"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 382,
+          "positiveReviewCount": 86,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "wait_time",
+            "reviewTagName": "Wait Time"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 116,
+          "positiveReviewCount": 83,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "voucher_delivery",
+            "reviewTagName": "Voucher Delivery"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 80,
+          "positiveReviewCount": 75,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "competitive_price",
+            "reviewTagName": "Competitive Price"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 111,
+          "positiveReviewCount": 75,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "location",
+            "reviewTagName": "Location"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 279,
+          "positiveReviewCount": 64,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "crowd",
+            "reviewTagName": "Crowd"
+          }
+        },
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 97,
+          "positiveReviewCount": 56,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "activity_staff",
+            "reviewTagName": "Activity Staff"
+          }
+        }
+      ]
+    },
+    "wishlistedProducts": {
+      "__typename": "PelagoError",
+      "errorHeader": null,
+      "errorMessage": "Missing Authorization Header",
+      "code": 401,
+      "errorDetails": null
+    }
+  }
