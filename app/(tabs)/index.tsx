@@ -2,6 +2,8 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { parseProductData } from '@/utils/productParser';
+import { generateSystemPrompt } from '@/utils/systemPrompt';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -15,6 +17,7 @@ import {
 } from 'react-native';
 import { LLAMA3_2_1B_SPINQUANT, Message, useLLM } from 'react-native-executorch';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import mockData from './mockData4.json';
 
 interface ChatMessage {
   id: string;
@@ -25,17 +28,47 @@ interface ChatMessage {
 export default function ChatScreen() {
   const colorScheme = useColorScheme();
   const [inputText, setInputText] = useState('');
-  const [messages, setMessages] = useState<ChatMessage[]>([
-    {
-      id: '1',
-      role: 'assistant',
-      content: 'Hello! How can I help you today?',
-    },
-  ]);
+  const [systemPrompt, setSystemPrompt] = useState<string>('');
+  const [productName, setProductName] = useState<string>('');
+  const [isLoadingProduct, setIsLoadingProduct] = useState(true);
   const flatListRef = useRef<FlatList>(null);
   const llm = useLLM({ model: LLAMA3_2_1B_SPINQUANT });
 
   const colors = Colors[colorScheme ?? 'light'];
+
+  // Load and parse product data on mount
+  useEffect(() => {
+    try {
+      const parsedData = parseProductData(mockData);
+      if (parsedData) {
+        const prompt = generateSystemPrompt(parsedData);
+        setSystemPrompt(prompt);
+        setProductName(parsedData.productName);
+        setIsLoadingProduct(false);
+      } else {
+        console.error('Failed to parse product data');
+        setIsLoadingProduct(false);
+      }
+    } catch (error) {
+      console.error('Error loading product data:', error);
+      setIsLoadingProduct(false);
+    }
+  }, []);
+
+  // Initialize messages with product-specific greeting
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+
+  useEffect(() => {
+    if (!isLoadingProduct && productName) {
+      setMessages([
+        {
+          id: '1',
+          role: 'assistant',
+          content: `Hello! I'm your Product Assistant for "${productName}". I'm here to help answer any questions you have about this product. What would you like to know?`,
+        },
+      ]);
+    }
+  }, [isLoadingProduct, productName]);
 
   // Scroll to bottom when new messages arrive
   useEffect(() => {
@@ -91,7 +124,7 @@ export default function ChatScreen() {
   }, [llm.response, llm.isGenerating]);
 
   const handleSend = useCallback(async () => {
-    if (!inputText.trim() || llm.isGenerating) return;
+    if (!inputText.trim() || llm.isGenerating || !systemPrompt) return;
 
     const userMessage: ChatMessage = {
       id: `msg-${Date.now()}`,
@@ -99,15 +132,14 @@ export default function ChatScreen() {
       content: inputText.trim(),
     };
 
-    const currentInput = inputText.trim();
     setInputText('');
 
     setMessages((prev) => {
       const updatedMessages = [...prev, userMessage];
       
-      // Build chat history for LLM
+      // Build chat history for LLM with product-specific system prompt
       const chatHistory: Message[] = [
-        { role: 'system', content: 'You are a helpful, friendly, and concise assistant.' },
+        { role: 'system', content: systemPrompt },
         ...updatedMessages
           .filter((msg) => !msg.id.startsWith('temp-'))
           .map((msg) => ({
@@ -147,7 +179,7 @@ export default function ChatScreen() {
 
       return messagesWithTemp;
     });
-  }, [inputText, llm]);
+  }, [inputText, llm, systemPrompt]);
 
   const renderMessage = useCallback(
     ({ item }: { item: ChatMessage }) => {
@@ -179,6 +211,17 @@ export default function ChatScreen() {
     [colors.tint, colorScheme]
   );
 
+  if (isLoadingProduct) {
+    return (
+      <SafeAreaView style={styles.safeArea} edges={['top']}>
+        <ThemedView style={[styles.container, styles.loadingContainer]}>
+          <ActivityIndicator size="large" color={colors.tint} />
+          <ThemedText style={styles.loadingText}>Loading product information...</ThemedText>
+        </ThemedView>
+      </SafeAreaView>
+    );
+  }
+
   return (
     <SafeAreaView style={styles.safeArea} edges={['top']}>
       <ThemedView style={styles.container}>
@@ -209,11 +252,11 @@ export default function ChatScreen() {
               ]}
               value={inputText}
               onChangeText={setInputText}
-              placeholder="Type your message..."
+              placeholder="Ask about this product..."
               placeholderTextColor={colors.icon}
               multiline
               maxLength={500}
-              editable={!llm.isGenerating}
+              editable={!llm.isGenerating && !isLoadingProduct}
               onSubmitEditing={handleSend}
               returnKeyType="send"
             />
@@ -221,11 +264,11 @@ export default function ChatScreen() {
               style={[
                 styles.sendButton,
                 {
-                  backgroundColor: inputText.trim() && !llm.isGenerating ? colors.tint : colors.icon,
+                  backgroundColor: inputText.trim() && !llm.isGenerating && !isLoadingProduct ? colors.tint : colors.icon,
                 },
               ]}
               onPress={handleSend}
-              disabled={!inputText.trim() || llm.isGenerating}>
+              disabled={!inputText.trim() || llm.isGenerating || isLoadingProduct || !systemPrompt}>
               {llm.isGenerating ? (
                 <ActivityIndicator size="small" color="#fff" />
               ) : (
@@ -246,6 +289,15 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+  },
+  loadingContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 16,
+  },
+  loadingText: {
+    fontSize: 16,
+    color: '#666',
   },
   keyboardView: {
     flex: 1,

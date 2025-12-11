@@ -1,0 +1,445 @@
+{
+    "product": {
+      "__typename": "Product",
+      "isCheckoutDisabled": false,
+      "productId": "p0q9t",
+      "productName": "Horseback ride from Arenal to Monteverde",
+      "productUri": "horseback-ride-from-arenal-to-monteverde",
+      "destinationId": "singapore",
+      "destination": {
+        "__typename": "Destination",
+        "destinationName": "Singapore",
+        "destinationCode": 22907
+      },
+      "kfEarnMilesPromoText": "Earn 3X KrisFlyer miles for bookings made between 8 Nov and 8 Dec.",
+      "kfmilesBurnValue": 880,
+      "maximumKfMiles": 5000,
+      "kfmilesMinimumValue": 1050,
+      "location": {
+        "longitude": -84.8255097,
+        "address": "Monteverde, Monteverde, Puntarenas Province",
+        "mapUrl": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/map.png",
+        "placeId": "ChIJnxIVVQAZoI8Rw9811WcDGG4",
+        "latitude": 10.2749682,
+        "operatorName": "Rezdy API Certification Use"
+      },
+      "productSubcategories": [
+        {
+          "__typename": "ProductCategory",
+          "categoryId": "sc_aquariums"
+        }
+      ],
+      "shortDescription": "Horseback ride from Arenal to Monteverde.",
+      "mediaData": [
+        {
+          "url": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena.jpeg",
+          "caption": null,
+          "description": null,
+          "name": "horseback-riding-tour-in-beach-of-cartagena.jpeg",
+          "isHighlighted": null,
+          "sizes": {
+            "xsmall": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-xsmall.jpeg",
+            "webpXsmall": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-xsmall.webp",
+            "small": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-small.jpeg",
+            "webpSmall": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-small.webp",
+            "medium": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-medium.jpeg",
+            "webpMedium": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-medium.webp",
+            "large": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-large.jpeg",
+            "webpLarge": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-large.webp",
+            "xlarge": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-xlarge.jpeg",
+            "webpXlarge": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena-xlarge.webp"
+          }
+        }
+      ],
+      "productTags": [
+        {
+          "__typename": "ProductTag",
+          "tagId": "tag_day_trips"
+        }
+      ],
+      "currency": "CAD",
+      "duration": null,
+      "guideLanguages": null,
+      "cancellationType": "NO_CANCELLATION",
+      "cancellationTypeText": null,
+      "hideKfMiles": false,
+      "isKrisflyerExperience": false,
+      "minGroupSize": null,
+      "maxGroupSize": null,
+      "openDateTicket": null,
+      "collectPhysicalTicket": null,
+      "confirmationType": "INSTANT",
+      "confirmationTypeText": "Instant confirmation",
+      "voucherType": "PARTNER",
+      "redemptionType": "MOBILE",
+      "priceRangeFrom": 8,
+      "priceRangeTo": 8,
+      "latitude": null,
+      "longitude": null,
+      "address": null,
+      "availabilityStartDate": "2025-12-11T10:45:47.535417+08:00",
+      "availabilityEndDate": "2026-04-10T10:45:47.632255+08:00",
+      "availableDates": [
+        "2025-12-11",
+        "2025-12-12",
+        "2025-12-13",
+        "2025-12-14",
+        "2025-12-15",
+        "2025-12-16",
+        "2025-12-17",
+        "2025-12-18",
+        "2025-12-19",
+        "2025-12-20",
+        "2025-12-21",
+        "2025-12-22",
+        "2025-12-23",
+        "2025-12-24",
+        "2025-12-25",
+        "2025-12-26",
+        "2025-12-27",
+        "2025-12-28",
+        "2025-12-29",
+        "2025-12-30",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-01-09",
+        "2026-01-10",
+        "2026-01-11",
+        "2026-01-12",
+        "2026-01-13",
+        "2026-01-14",
+        "2026-01-15",
+        "2026-01-16",
+        "2026-01-17",
+        "2026-01-18",
+        "2026-01-19",
+        "2026-01-20",
+        "2026-01-21",
+        "2026-01-22",
+        "2026-01-23",
+        "2026-01-24",
+        "2026-01-25",
+        "2026-01-26",
+        "2026-01-27",
+        "2026-01-28",
+        "2026-01-29",
+        "2026-01-30",
+        "2026-01-31",
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-03",
+        "2026-02-04",
+        "2026-02-05",
+        "2026-02-06",
+        "2026-02-07",
+        "2026-02-08",
+        "2026-02-09",
+        "2026-02-10",
+        "2026-02-11",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-14",
+        "2026-02-15",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-02-19",
+        "2026-02-20",
+        "2026-02-21",
+        "2026-02-22",
+        "2026-02-23",
+        "2026-02-24",
+        "2026-02-25",
+        "2026-02-26",
+        "2026-02-27",
+        "2026-02-28",
+        "2026-03-01",
+        "2026-03-02",
+        "2026-03-03",
+        "2026-03-04",
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25",
+        "2026-03-26",
+        "2026-03-27",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-03-30",
+        "2026-03-31",
+        "2026-04-01",
+        "2026-04-02",
+        "2026-04-03",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-04-07",
+        "2026-04-08",
+        "2026-04-09"
+      ],
+      "content": {
+        "shortDescription": "Horseback ride from Arenal to Monteverde.",
+        "headerMap": {
+          "allSections": [
+            "overview",
+            "imageHighlights",
+            "features",
+            "productOptions",
+            "customerReviews",
+            "recommendedProducts",
+            "exploreTags",
+            "address",
+            "location"
+          ],
+          "sections": {
+            "overview": {
+              "headerLabel": "Overview",
+              "componentType": "overviewComponent",
+              "attributeId": "overview",
+              "allSections": [
+                "description"
+              ],
+              "sections": {
+                "description": {
+                  "heading": null,
+                  "text": "<p>Horseback ride from Arenal to Monteverde. This is an adventure connection which includes shuttle pick ups in Arenal, lake crossing and horseback ride to Monteverde. Provider will pick up an drop off in most locations in the area.</p>"
+                }
+              }
+            },
+            "imageHighlights": {
+              "title": "Highlights",
+              "headerLabel": "Highlights",
+              "componentType": "imageHighlightsComponent",
+              "attributeId": "image_highlights"
+            },
+            "productOptions": {
+              "title": "Select Your Option",
+              "headerLabel": "Package Options",
+              "componentType": "productOptionsComponent",
+              "attributeId": "package_options"
+            },
+            "customerReviews": {
+              "title": "Customer Reviews",
+              "headerLabel": "Customer Reviews",
+              "componentType": "customerReviewsComponent",
+              "attributeId": "customer_reviews"
+            },
+            "recommendedProducts": {
+              "title": "You Might Also Like",
+              "headerLabel": "You Might Also Like",
+              "componentType": "recommendedProductsComponent",
+              "attributeId": "related_products"
+            },
+            "exploreTags": {
+              "title": "Explore Similar Things To Do",
+              "headerLabel": "Explore Similar Things To Do",
+              "componentType": "exploreTagsComponent",
+              "attributeId": "explore_product_tags"
+            },
+            "location": {
+              "title": "Location",
+              "headerLabel": "Location",
+              "componentType": "locationComponent",
+              "attributeId": "location_map",
+              "allSections": [
+                "address"
+              ],
+              "sections": {
+                "address": {
+                  "heading": "Address",
+                  "text": "Monteverde, Monteverde, Puntarenas Province"
+                }
+              }
+            }
+          }
+        }
+      },
+      "productMetaView": null,
+      "status": "PUBLISHED",
+      "rating": 2.5,
+      "ratingDistribution": {
+        "1": 50,
+        "2": 0,
+        "3": 0,
+        "4": 50,
+        "5": 0
+      },
+      "reviewCount": 2,
+      "reviewSummary": null,
+      "trackMeta": {},
+      "contentLang": "en",
+      "originalContentLang": "en",
+      "wishlistedCustomerCount": 15,
+      "strikeOffDiscountValue": null,
+      "strikeOffDiscountType": null,
+      "isKfExclusive": false,
+      "isLowestPriceKfExclusive": false,
+      "branding": null,
+      "metaTags": {
+        "title": "Horseback ride from Arenal to Monteverde in Singapore | Pelago",
+        "description": "Horseback ride from Arenal to Monteverde.",
+        "h1": "Horseback ride from Arenal to Monteverde in Singapore",
+        "ogTitle": "Horseback ride from Arenal to Monteverde in Singapore | Pelago",
+        "ogDescription": "Horseback ride from Arenal to Monteverde.",
+        "ogImage": "https://traveller.qa.pelago.com/img/products/SG-Singapore/horseback-ride-from-arenal-to-monteverde/0120-0343_horseback-riding-tour-in-beach-of-cartagena.jpeg",
+        "ogProductId": "p0q9t",
+        "ogProductAvailability": "in stock",
+        "ogProductPriceAmount": "5.67",
+        "ogProductPriceCurrency": "USD",
+        "ogSiteName": "Pelago",
+        "ogBrand": "Pelago",
+        "ogLocale": "en",
+        "ogProductLocale": "en",
+        "ogProductCondition": "new"
+      },
+      "faqs": {
+        "sections": [
+          {
+            "question": "What is the duration of the horseback ride from Arenal to Monteverde?",
+            "answer": "The horseback ride from Arenal to Monteverde typically takes around 10 hours."
+          },
+          {
+            "question": "Do I need prior horseback riding experience?",
+            "answer": "No prior horseback riding experience is necessary. The tour is suitable for beginners and experienced riders alike. Basic instructions and guidance will be provided."
+          },
+          {
+            "question": "What should I wear and bring for the horseback ride?",
+            "answer": "It is recommended to wear long pants, closed-toe shoes, and a hat. Sunscreen, insect repellent, and a small backpack with water and snacks are also advisable."
+          }
+        ],
+        "attributeId": "faqs",
+        "title": "Frequently asked questions"
+      },
+      "productBucket": {
+        "__typename": "ProductBucketLabel",
+        "id": "top_by_destination",
+        "label": "Top 10"
+      }
+    },
+    "productOptionsData": {
+      "__typename": "ProductOptionsData",
+      "loyaltyRewardsBanner": "Earn 3 miles per S$1 spent",
+      "productOptionsData": [
+        {
+          "__typename": "ProductOption",
+          "optionId": "12c08bd8-bd24-49e8-a3db-671d9ffb6747",
+          "optionName": "Horseback ride from Arenal to Monteverde",
+          "optionRank": null,
+          "bestSeller": true,
+          "content": {},
+          "minimumQuantity": 1,
+          "maximumQuantity": null,
+          "contentLang": "en",
+          "currency": "CAD",
+          "allSelectors": null,
+          "selectorMetaData": {},
+          "isCheckoutDisabled": false,
+          "isCulturepassEnabled": false,
+          "nextAvailabilityData": {
+            "__typename": "NextAvailabilityData",
+            "nextAvailableDate": "2025-12-11",
+            "priceRangeFrom": 8,
+            "strikeOffDiscountValue": null,
+            "strikeOffDiscountType": null
+          },
+          "paymentBreakdown": null,
+          "confirmationTypeText": "Instant confirmation",
+          "cancellationType": "NO_CANCELLATION",
+          "confirmationType": "INSTANT",
+          "cancellationPolicy": {
+            "__typename": "ProductCancellationPolicyDisplay",
+            "hasServiceFee": false,
+            "callout": "No cancellation",
+            "cancellationWindows": []
+          },
+          "isKfExclusive": false,
+          "kfExclusiveLabel": null,
+          "branding": null,
+          "loyaltyRewards": {
+            "080e8c92-a128-41b7-97cf-3e8a2201ce5d": 22
+          },
+          "hasRedemptionRules": false,
+          "redemptionRules": []
+        }
+      ]
+    },
+    "optionGroups": {
+      "__typename": "OptionGroupsOutput",
+      "optionGroups": []
+    },
+    "productReviewsDetails": {
+      "__typename": "ReviewDataHistory",
+      "reviews": [
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2024-07-23T00:00:00",
+          "rating": 4,
+          "reviewId": "351360c7-e8ed-496d-b9e1-21db7c173176",
+          "reviewDate": "2024-09-26T13:00:42.992436",
+          "comment": "review old booking with 1 review",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "lala",
+          "lastName": "bubu",
+          "externalSource": null
+        },
+        {
+          "__typename": "ReviewData",
+          "activityDate": "2023-10-20T00:00:00",
+          "rating": 1,
+          "reviewId": "39a44772-83c9-44be-bedc-73e034813301",
+          "reviewDate": "2023-11-16T05:51:49.209198",
+          "comment": "Not good",
+          "status": "PUBLISHED",
+          "travellerType": "Family (with teens)",
+          "firstName": "Tien Nhan",
+          "lastName": "Nguyen",
+          "externalSource": null
+        }
+      ],
+      "reviewCount": 2
+    },
+    "productReviewTags": {
+      "__typename": "ProductReviewTags",
+      "productReviewTags": [
+        {
+          "__typename": "ProductReviewTag",
+          "reviewCount": 2,
+          "positiveReviewCount": 2,
+          "reviewTag": {
+            "__typename": "ReviewTag",
+            "reviewTagId": "platform_booking_process",
+            "reviewTagName": "Platform Booking Process"
+          }
+        }
+      ]
+    },
+    "wishlistedProducts": {
+      "__typename": "WishlistedProductsOutput",
+      "productIds": []
+    }
+  }
