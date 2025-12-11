@@ -3,6 +3,24 @@
  * and extract only useful fields for the AI assistant
  */
 
+export interface ProductOption {
+  optionId: string;
+  optionName: string;
+  bestSeller?: boolean;
+  currency: string;
+  priceFrom: number;
+  priceTo?: number;
+  minimumQuantity: number;
+  maximumQuantity?: number;
+  confirmationType: string;
+  cancellationType: string;
+  cancellationPolicy: string;
+  nextAvailableDate?: string;
+  loyaltyRewards?: Record<string, number>;
+  isKfExclusive?: boolean;
+  kfExclusiveLabel?: string;
+}
+
 export interface ParsedProductData {
   productName: string;
   productId: string;
@@ -27,6 +45,7 @@ export interface ParsedProductData {
     startDate: string;
     endDate: string;
     nextAvailableDate: string;
+    availableDates: string[];
   };
   faqs: Array<{
     question: string;
@@ -38,12 +57,14 @@ export interface ParsedProductData {
     comment: string;
     travellerType: string;
   }>;
+  productOptions: ProductOption[];
+  loyaltyRewardsBanner?: string;
 }
 
 export function parseProductData(data: any): ParsedProductData | null {
   try {
     const product = data?.product;
-    const productOptions = data?.productOptionsData?.productOptionsData?.[0];
+    const productOptionsData = data?.productOptionsData;
 
     if (!product) {
       return null;
@@ -67,8 +88,32 @@ export function parseProductData(data: any): ParsedProductData | null {
       travellerType: review.travellerType || '',
     })) || [];
 
-    // Extract cancellation policy
-    const cancellationPolicy = productOptions?.cancellationPolicy?.callout || 
+    // Parse all product options
+    const productOptions: ProductOption[] = (productOptionsData?.productOptionsData || []).map((option: any) => {
+      if (!option) return null;
+      return {
+        optionId: option.optionId || '',
+        optionName: option.optionName || '',
+        bestSeller: option.bestSeller || false,
+        currency: option.currency || product.currency || '',
+        priceFrom: option.nextAvailabilityData?.priceRangeFrom || option.priceRangeFrom || product.priceRangeFrom || 0,
+        priceTo: option.priceRangeTo || product.priceRangeTo || product.priceRangeFrom || 0,
+        minimumQuantity: option.minimumQuantity || 1,
+        maximumQuantity: option.maximumQuantity || null,
+        confirmationType: option.confirmationTypeText || product.confirmationTypeText || '',
+        cancellationType: option.cancellationType || product.cancellationType || '',
+        cancellationPolicy: option.cancellationPolicy?.callout || 
+                           (option.cancellationType === 'NO_CANCELLATION' ? 'No cancellation' : 'Cancellation available'),
+        nextAvailableDate: option.nextAvailabilityData?.nextAvailableDate || '',
+        loyaltyRewards: option.loyaltyRewards || {},
+        isKfExclusive: option.isKfExclusive || false,
+        kfExclusiveLabel: option.kfExclusiveLabel || null,
+      };
+    }).filter((opt): opt is ProductOption => opt !== null);
+
+    // Use first option as default for main product info, or fallback to product data
+    const defaultOption = productOptions[0];
+    const cancellationPolicy = defaultOption?.cancellationPolicy || 
                                product.cancellationTypeText || 
                                (product.cancellationType === 'NO_CANCELLATION' ? 'No cancellation allowed' : 'Cancellation available');
 
@@ -84,21 +129,24 @@ export function parseProductData(data: any): ParsedProductData | null {
         longitude: product.location?.longitude || 0,
       },
       price: {
-        currency: productOptions?.currency || product.currency || '',
-        from: productOptions?.nextAvailabilityData?.priceRangeFrom || product.priceRangeFrom || 0,
-        to: product.priceRangeTo || product.priceRangeFrom || 0,
+        currency: defaultOption?.currency || product.currency || '',
+        from: defaultOption?.priceFrom || product.priceRangeFrom || 0,
+        to: defaultOption?.priceTo || product.priceRangeTo || product.priceRangeFrom || 0,
       },
       rating: product.rating || 0,
       reviewCount: product.reviewCount || 0,
-      confirmationType: productOptions?.confirmationTypeText || product.confirmationTypeText || '',
+      confirmationType: defaultOption?.confirmationType || product.confirmationTypeText || '',
       cancellationPolicy,
       availability: {
         startDate: product.availabilityStartDate || '',
         endDate: product.availabilityEndDate || '',
-        nextAvailableDate: productOptions?.nextAvailabilityData?.nextAvailableDate || '',
+        nextAvailableDate: defaultOption?.nextAvailableDate || '',
+        availableDates: product.availableDates || [],
       },
       faqs,
       reviews: reviews.slice(0, 5), // Limit to 5 most recent reviews
+      productOptions,
+      loyaltyRewardsBanner: productOptionsData?.loyaltyRewardsBanner || null,
     };
   } catch (error) {
     console.error('Error parsing product data:', error);
