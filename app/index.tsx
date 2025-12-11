@@ -86,7 +86,7 @@ export default function ProductScreen() {
 
         <TouchableOpacity
           style={styles.askButton}
-          onPress={() => router.push('/aiChat')}
+          onPress={() => router.push('/chat')}
           activeOpacity={0.8}>
           <Ionicons name="chatbubbles" size={18} color="#fff" />
           <Text style={styles.askButtonText}>Ask PocketGuide about this experience</Text>
