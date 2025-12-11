@@ -16,7 +16,8 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import { LLAMA3_2_1B, Message, useLLM } from 'react-native-executorch';
+import { Ionicons } from '@expo/vector-icons';
+import { LLAMA3_2_1B, LLAMA3_2_1B_SPINQUANT, Message, useLLM } from 'react-native-executorch';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 interface ChatMessage {
@@ -36,7 +37,7 @@ export default function ChatScreen() {
   const [productName, setProductName] = useState<string>('');
   const [isLoadingProduct, setIsLoadingProduct] = useState(true);
   const flatListRef = useRef<FlatList>(null);
-  const llm = useLLM({ model: LLAMA3_2_1B });
+  const llm = useLLM({ model: LLAMA3_2_1B_SPINQUANT });
 
   const colors = Colors[colorScheme ?? 'light'];
 
@@ -190,6 +191,10 @@ export default function ChatScreen() {
     });
   }, [inputText, llm, systemPrompt]);
 
+  const handleBack = useCallback(() => {
+    router.back();
+  }, [router]);
+
   const renderMessage = useCallback(
     ({ item }: { item: ChatMessage }) => {
       const isUser = item.role === 'user';
@@ -234,6 +239,15 @@ export default function ChatScreen() {
   return (
     <SafeAreaView style={styles.safeArea} edges={['top','bottom']}>
       <ThemedView style={styles.container}>
+        <View style={styles.header}>
+          <TouchableOpacity onPress={handleBack} style={styles.backButton}>
+            <Ionicons name="arrow-back" size={24} color={colors.text} />
+          </TouchableOpacity>
+          <ThemedText style={styles.headerTitle} numberOfLines={1}>
+            {productName}
+          </ThemedText>
+          <View style={styles.headerSpacer} />
+        </View>
         <KeyboardAvoidingView
           style={styles.keyboardView}
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -298,6 +312,26 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  backButton: {
+    padding: 4,
+  },
+  headerTitle: {
+    flex: 1,
+    fontSize: 18,
+    fontWeight: '600',
+    marginLeft: 8,
+  },
+  headerSpacer: {
+    width: 24,
   },
   loadingContainer: {
     justifyContent: 'center',
