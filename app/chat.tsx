@@ -4,6 +4,7 @@ import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { parseProductData } from '@/utils/productParser';
 import { generateSystemPrompt } from '@/utils/systemPrompt';
+import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter } from 'expo-router'; // Added for params and router
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
@@ -16,8 +17,7 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { LLAMA3_2_1B, LLAMA3_2_1B_SPINQUANT, Message, useLLM } from 'react-native-executorch';
+import { LLAMA3_2_1B, Message, useLLM } from 'react-native-executorch';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 interface ChatMessage {
@@ -37,7 +37,7 @@ export default function ChatScreen() {
   const [productName, setProductName] = useState<string>('');
   const [isLoadingProduct, setIsLoadingProduct] = useState(true);
   const flatListRef = useRef<FlatList>(null);
-  const llm = useLLM({ model: LLAMA3_2_1B_SPINQUANT });
+  const llm = useLLM({ model: LLAMA3_2_1B });
 
   const colors = Colors[colorScheme ?? 'light'];
 
